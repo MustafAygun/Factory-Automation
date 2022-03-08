@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>uretimekle</class>
+ <widget class="QDialog" name="uretimekle">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>524</width>
+    <height>476</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>250</y>
+     <width>158</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="pbKaydet">
+      <property name="text">
+       <string>Kaydet</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pbKapat">
+      <property name="text">
+       <string>Kapat</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>10</y>
+     <width>251</width>
+     <height>136</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="lbCalisanAdi">
+        <property name="text">
+         <string>calisan adı</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="cmbCalisanid"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="Calisanekle">
+        <property name="text">
+         <string>&lt;a href=&quot;#&quot;&gt;Calisan ekle&lt;/a&gt;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QLabel" name="lburunAdi">
+        <property name="text">
+         <string>urun adı</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="cmbUrunid"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="Urunekle">
+        <property name="text">
+         <string>&lt;a href=&quot;#&quot;&gt;urun ekle&lt;/a&gt;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QLabel" name="lbMiktar">
+        <property name="text">
+         <string>Miktar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="sbMiktar"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pbKapat</sender>
+   <signal>clicked()</signal>
+   <receiver>uretimekle</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>261</x>
+     <y>263</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>221</x>
+     <y>327</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sbMiktar</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>uretimekle</receiver>
+   <slot>degisti()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>143</x>
+     <y>123</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>133</x>
+     <y>157</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmbCalisanid</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>uretimekle</receiver>
+   <slot>degisti()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>154</x>
+     <y>28</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>235</x>
+     <y>16</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmbUrunid</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>uretimekle</receiver>
+   <slot>degisti()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>115</x>
+     <y>80</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>220</x>
+     <y>45</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>degisti()</slot>
+ </slots>
+</ui>

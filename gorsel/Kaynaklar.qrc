@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/Resimler">
+        <file alias="ac.png">Resimler/open</file>
+        <file>Resimler/exit</file>
+        <file>Resimler/kaydet</file>
+        <file>Resimler/save as</file>
+        <file>Resimler/calisan</file>
+        <file>Resimler/calisan ekle</file>
+        <file>Resimler/calisan sil</file>
+        <file>Resimler/uretim ekle</file>
+        <file>Resimler/urun ekle</file>
+        <file>Resimler/vardiya ekle</file>
+    </qresource>
+</RCC>

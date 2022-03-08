@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>calisanekle</class>
+ <widget class="QDialog" name="calisanekle">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>calisan ekle</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="lbAdi">
+       <property name="text">
+        <string>Adı</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="leadi"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="lbSoyAdi">
+       <property name="text">
+        <string>Soy Adı</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="leSoyadi"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="lbsicilno">
+       <property name="text">
+        <string>sicil no</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="leSicilno"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="lbKimlikno">
+       <property name="text">
+        <string>Kimlik Nı</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="leKimlikno">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QLabel" name="lbAdress">
+       <property name="text">
+        <string>Adress</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="teAdress"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_6"/>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Kapat">
+       <property name="text">
+        <string>Kapat</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="kaydet">
+       <property name="text">
+        <string>Kaydet</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Kapat</sender>
+   <signal>clicked()</signal>
+   <receiver>calisanekle</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>271</x>
+     <y>278</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>leadi</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>calisanekle</receiver>
+   <slot>gorseldegisti()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>56</x>
+     <y>19</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>279</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>leSoyadi</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>calisanekle</receiver>
+   <slot>gorseldegisti()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>98</x>
+     <y>45</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>45</x>
+     <y>290</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>leSicilno</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>calisanekle</receiver>
+   <slot>gorseldegisti()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>167</x>
+     <y>74</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>85</x>
+     <y>261</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>leKimlikno</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>calisanekle</receiver>
+   <slot>gorseldegisti()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>232</x>
+     <y>107</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>131</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>teAdress</sender>
+   <signal>textChanged()</signal>
+   <receiver>calisanekle</receiver>
+   <slot>gorseldegisti()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>315</x>
+     <y>183</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>176</x>
+     <y>273</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>gorseldegisti()</slot>
+ </slots>
+</ui>
